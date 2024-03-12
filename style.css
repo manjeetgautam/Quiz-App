@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box{
+    border: 2px solid black;
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.appname{
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    background-color: deeppink;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.appname h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.qna-box{
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.question{
+    font-size: 20px;
+    font-weight: bold;
+
+
+}
+
+ul{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+li{
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 20px;
+    font-size: 20px;
+    height: 30px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    font-size: 20px;
+    background-color: deeppink;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.next:hover{
+    background-color: rgb(212, 19, 122);
+    transition: ease;
+}
+
+.right{
+    background-color: greenyellow;
+    transition: ease;
+}
+
+.wrong{
+    background-color: red;
+    transition: ease;
+}
