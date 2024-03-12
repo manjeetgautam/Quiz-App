@@ -98,3 +98,18 @@ button{
     background-color: red;
     transition: ease;
 }
+
+.scoreboard{
+    height: 40px;
+    margin-top: 24px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: black;
+    color: rgb(212, 19, 122);
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
