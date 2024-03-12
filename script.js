@@ -38,6 +38,7 @@ options.forEach((opt) =>{
     
 })
 
+//display content
 
 function displayquestions(arr){
 
