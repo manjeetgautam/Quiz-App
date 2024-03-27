@@ -9,7 +9,8 @@ Background color change with green of the correct option
 
 
 
-![Screenshot 2024-03-27 120614](https://github.com/manjeetgautam/Quiz-App/assets/89069404/b0105b61-77f6-4af3-9196-8286a82acb52)
+![Screenshot 2024-03-27 120634](https://github.com/manjeetgautam/Quiz-App/assets/89069404/451ffb5b-01b6-4b4f-9ab0-029cbc712ff6)
+
 
 
 
