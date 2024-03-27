@@ -1,6 +1,19 @@
-let arr = [["National Animal of India?", "Lion", "Tiger", "Horse", "Deer", "Tiger"],
-["National fruit of India", "Banana", "Lichi", "Apple", "Mango", "Mango"],
-["Prime Minister of india.", "Modi", "Rahul", "Kejriwal", "Lalu", "Modi"]]
+let arr = [
+    ["What is the capital of India?", "New Delhi", "Kolkata", "Chennai", "Mumbai", "New Delhi"],
+    ["Who is known as the Iron Man of India?", "Mahatma Gandhi", "B.R. Ambedkar", "Jawaharlal Nehru", "Sardar Vallabhbhai Patel", "Sardar Vallabhbhai Patel"],
+    ["Which is the national bird of India?", "Indian Crow", "Indian Peafowl", "Indian Sparrow", "Indian Parrot", "Indian Peafowl"],
+    ["Who composed the Indian National Anthem?", "Rabindranath Tagore", "Bankim Chandra Chattopadhyay", "Maulana Abul Kalam Azad", "Sarojini Naidu", "Rabindranath Tagore"],
+    ["When did India become independent?","1955", "1950", "1947",  "1945", "1947"],
+    ["Who was the first Prime Minister of India?", "Jawaharlal Nehru", "Indira Gandhi", "Lal Bahadur Shastri", "Rajiv Gandhi", "Jawaharlal Nehru"],
+    ["Which is the national animal of India?", "Lion", "Elephant", "Leopard", "Tiger", "Tiger"],
+    ["Who is known as the Father of the Indian Constitution?", "Mahatma Gandhi", "B.R. Ambedkar", "Jawaharlal Nehru", "Sardar Patel", "B.R. Ambedkar"],
+    ["Which Indian state is known as the Land of Five Rivers?", "Uttar Pradesh", "Rajasthan", "Punjab", "Haryana", "Punjab"],
+    ["Who is known as the Nightingale of India?", "Sarojini Naidu", "Indira Gandhi", "Mother Teresa", "Kalpana Chawla", "Sarojini Naidu"],
+  ]
+  
+  
+  
+
 const Question = document.querySelector(".question")
 const options = document.querySelectorAll("li")
 const next = document.querySelector("button")
@@ -21,6 +34,24 @@ function blockoptions() {
 
 function finalscore(){
     cont.textContent=''
+    var finalbox = document.createElement("div")
+    var scoretital = document.createElement("h1")
+    var scoreboard = document.createElement("div")
+    var totalscore = document.createElement("h1")
+
+
+    finalbox.classList.add("finalbox")
+    scoreboard.classList.add("finalscoreboard")
+
+    scoretital.innerText = "Total Score";
+    totalscore.innerText = score + " / " + arr.length
+
+
+    cont.appendChild(finalbox)
+    finalbox.appendChild(scoretital)
+    finalbox.appendChild(scoreboard)
+    scoreboard.appendChild(totalscore)
+
 }
 
 function checkans() {
@@ -32,12 +63,6 @@ function checkans() {
 
                 score = score + 1;
                 scr.innerText = score
-
-                // if(index == arr.length-1){
-                //     console.log(index);
-                //     finalscore();
-            
-                // }
             }
 
 
@@ -50,13 +75,6 @@ function checkans() {
                     }
                 })
                 blockoptions();
-
-                // if(index == arr.length-1){
-                //     console.log(index);
-                //     dela
-                //     finalscore();
-            
-                // }
             }
 
         }
@@ -74,8 +92,8 @@ function displayquestions() {
         opt.innerText = arr[index][i]
         i++;
     })
-    console.log(Question);
-    console.log([index][0]);
+    // console.log(Question);
+    // console.log([index][0]);
 
 }
 
@@ -94,5 +112,9 @@ next.addEventListener("click", function () {
         checkans();
     }
 
+    else if(index == arr.length-1){
+        finalscore();
+        index=0
+    }
 
 })

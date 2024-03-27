@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    background: linear-gradient(#68e664, #e591de);
 }
 
 .box{
@@ -21,6 +21,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: white;
 }
 
 .appname{
@@ -63,7 +64,7 @@ ul{
 }
 
 li{
-    width: 100%;
+    width: 101%;
     border: 1px solid black;
     margin-top: 20px;
     font-size: 20px;
@@ -73,7 +74,7 @@ li{
 }
 
 button{
-    width: 100px;
+    width: 150px;
     height: 40px;
     margin-top: 30px;
     font-size: 20px;
@@ -100,7 +101,7 @@ button{
 }
 
 .scoreboard{
-    height: 40px;
+    height: 41px;
     margin-top: 24px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -111,5 +112,33 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
+
+}
+
+.finalbox{
+    width: 80%;
+    height: 300px;
+    border: 2px solid deeppink;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(13, 13, 131);
+    margin-left: 40px;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+.finalscoreboard{
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+    border-radius: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
 }
